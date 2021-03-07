@@ -1,3 +1,4 @@
+#Eureka
 eureka:
   client:
     register-with-eureka: true
@@ -7,6 +8,19 @@ eureka:
   instance:
     hostname: localhost
 
+#LOGGER
+logging:
+  level:
+    ROOT: ERROR
+    org:
+      springframework:
+        web: DEBUG
+      hibernate: DEBUG
+    com:
+      netflix:
+        discovery: 'OFF'
+
+#URL
 microservice:
   product-service:
     endpoint:
@@ -14,3 +28,4 @@ microservice:
   category-service:
     endpoint:
       uri: http://CATEGORY-SERVICE/category
+      
