@@ -24,7 +24,7 @@ logging:
 microservice:
   product-service:
     endpoint:
-      uri: http://PRODUCT-SERVICE/product_test
+      uri: http://PRODUCT-SERVICE/product
   category-service:
     endpoint:
       uri: http://CATEGORY-SERVICE/category
